@@ -99,6 +99,36 @@ Integrate with feeder logic, harvest prediction, and financing.
 - Technical Note: [Technical_Note.pdf](Technical_Note.pdf)
 - Demo video (2–5 mins walkthrough): [Watch here](https://drive.google.com/file/d/1i3eBetShwvm4fajYy6PQ5JWgMo0sxmkF/view?usp=drive_link)
 
+## Next Phase Plan
+The following outlines improvements and extensions to the current prototype:
+
+1. Improved Training (More Epochs)  
+- Retrain YOLOv5s with 100–300 epochs  
+- Use fish‑specific datasets (tilapia, catfish)  
+- Apply data augmentation (flips, brightness changes, murky water simulation)  
+- **Impact:** Higher detection rate, fewer missed fish, more consistent size/weight estimates  
+
+2. Nighttime / Total Darkness Scenario  
+- Integrate infrared (IR) cameras with IR illumination  
+- Explore low‑light sensors or thermal imaging  
+- Retrain/fine‑tune on IR images  
+- **Impact:** Continuous monitoring at night without disturbing fish behavior  
+
+3. Infrared Light for Fish Tracking  
+- Yes, IR light can be used for fish tracking  
+- Invisible to fish, won’t affect feeding or stress  
+- Next step: Collect IR footage and fine‑tune model  
+
+4. Integration & Product Thinking  
+- Feeder logic, harvest prediction, financing  
+
+5. Deliverables for Next Phase  
+- Retrained YOLOv5s weights  
+- Sample IR footage + detection demo  
+- Updated Technical Note  
+- README update with this section
+
+
 Author
 Elewa Prince Chizi  
 Computer Vision / AI Engineer (Trial Candidate)
