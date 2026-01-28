@@ -1,18 +1,17 @@
 # Fishcluster Vision-Based Fish Measurement Prototype
 
 ## Overview
-This prototype demonstrates a computer vision pipeline for fish detection and size estimation in ponds.  
-It is designed for **low-cost hardware** and reflects **field realism** in African aquaculture.
+This prototype demonstrates a vision-based pipeline for fish detection and size estimation in ponds.  
+It is designed for **low-cost cameras** and reflects **realistic field conditions** in African aquaculture.
 
-Farmers currently feed fish daily without knowing:
-- Actual fish size distribution
-- Growth rate vs. feed given
-- Biomass in pond
-- Whether feed is wasted or under-fed
+Farmers often feed fish daily without knowing:
+- How big the fish are
+- How fast they are growing compared to feed given
+- The total biomass in the pond
+- Whether feed is being wasted or under-fed
 
-This prototype provides visibility into the pond using simple cameras.
-
----
+This lack of visibility leads to 30–50% feed waste, slower growth cycles, and poor harvest planning.  
+Our prototype provides farmers with **practical insights** into their ponds, helping reduce waste, improve feeding schedules, and plan harvests more effectively.
 
 ## Features
 - Detect fish in video frames (YOLOv5s pretrained)
@@ -25,8 +24,6 @@ This prototype provides visibility into the pond using simple cameras.
   - Average detection confidence
 - Annotated video with bounding boxes + size/weight overlays
 
----
-
 ## Installation
 Clone the repo and install dependencies:
 
@@ -37,33 +34,23 @@ pip install -r requirements.txt
 
 Requirements
 Python 3.8+
-
 PyTorch
-
 Torchvision
-
 OpenCV
-
 NumPy
-
 Pillow
-
 Matplotlib
-
 tqdm
-
 Ultralytics YOLOv5
 
 Usage
 Run detection on a sample video:
-
 bash
 python detect.py --input "sample_fish_video.mp4" --output runs/detect
 Outputs
 runs/detect/fish_detected.mp4 → annotated video
 
 Console summary:
-
 text
 📊 Summary: Detected 38 fish
    Average length: 14.7 cm
