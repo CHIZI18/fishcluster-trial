@@ -74,41 +74,31 @@ text
    Small (<15 cm): 12
    Medium (15–30 cm): 23
    Large (>30 cm): 3
-Assumptions
+
+## Assumptions
 Camera is static above or beside pond.
-
 Scale factor = 0.01 cm/pixel (approximate).
-
 Constants (a=0.012, b=3.0) tuned for tilapia/catfish.
-
 Bounding boxes may merge overlapping fish → inflated weights.
 
-Limitations
+## Limitations
 Murky water, occlusion, reflections reduce accuracy.
-
 Length estimates approximate without calibration.
-
 Pretrained YOLO not specialized for fish.
 
-Path to Improvement
+## Path to Improvement
 Calibrate pixel → cm using reference object.
-
 Retrain YOLO on fish dataset for tighter bounding boxes.
-
 Deploy on GPU/edge devices for real-time fluency.
-
 Integrate with feeder logic, harvest prediction, and financing.
 
-Deliverables
-detect.py (code)
+## Deliverables
+- `detect.py` (code)
+- Annotated video output: [fish_detected.mp4](https://drive.google.com/file/d/1liQKN4J0SWNi6xg5uwPT8VoTNMUbZP-4/view?usp=drive_link)
+- Console metrics (size, weight, biomass, confidence, distribution)
+- Technical Note (`Technical_Note.pdf`)
+- Demo video (2–5 mins walkthrough): [Watch here](https://drive.google.com/file/d/1i3eBetShwvm4fajYy6PQ5JWgMo0sxmkF/view?usp=drive_link)
 
-Annotated video output
-
-Console metrics (size, weight, biomass, confidence, distribution)
-
-Technical note (Technical_Note.pdf)
-
-Demo video (2–5 mins walkthrough)
 
 Author
 Elewa Prince Chizi  
