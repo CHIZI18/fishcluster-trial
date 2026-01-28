@@ -96,9 +96,8 @@ Integrate with feeder logic, harvest prediction, and financing.
 - `detect.py` (code)
 - Annotated video output: [fish_detected.mp4](https://drive.google.com/file/d/1liQKN4J0SWNi6xg5uwPT8VoTNMUbZP-4/view?usp=drive_link)
 - Console metrics (size, weight, biomass, confidence, distribution)
-- Technical Note (`Technical_Note.pdf`)
+- Technical Note: [Technical_Note.pdf](Technical_Note.pdf)
 - Demo video (2–5 mins walkthrough): [Watch here](https://drive.google.com/file/d/1i3eBetShwvm4fajYy6PQ5JWgMo0sxmkF/view?usp=drive_link)
-
 
 Author
 Elewa Prince Chizi  
