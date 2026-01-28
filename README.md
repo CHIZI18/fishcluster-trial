@@ -87,10 +87,10 @@ Length estimates approximate without calibration.
 Pretrained YOLO not specialized for fish.
 
 ## Path to Improvement
-Calibrate pixel → cm using reference object.
-Retrain YOLO on fish dataset for tighter bounding boxes.
-Deploy on GPU/edge devices for real-time fluency.
-Integrate with feeder logic, harvest prediction, and financing.
+- Calibrate pixel → cm using reference objects
+- Retrain YOLO on fish datasets for tighter bounding boxes
+- Deploy on GPU/edge devices for real-time monitoring
+- Integrate with feeder logic and harvest prediction
 
 ## Deliverables
 - `detect.py` (code)
@@ -100,36 +100,15 @@ Integrate with feeder logic, harvest prediction, and financing.
 - Demo video (2–5 mins walkthrough): [Watch here](https://drive.google.com/file/d/1i3eBetShwvm4fajYy6PQ5JWgMo0sxmkF/view?usp=drive_link)
 
 ## Next Phase Plan
-The following outlines improvements and extensions to the current prototype:
+See [Next_Phase_Plan.pdf](Next_Phase_Plan.pdf) for the full roadmap.  
+Key improvements include:
+1. **Improved Training (More Epochs)** — retrain YOLOv5s with 100–300 epochs and fish‑specific datasets.  
+2. **Nighttime Monitoring** — integrate infrared cameras and illumination for 24/7 tracking.  
+3. **Infrared Light for Fish Tracking** — IR is invisible to fish but usable by cameras; retrain on IR footage.  
+4. **Integration Thinking** — feeder logic, harvest prediction, financing support.  
+5. **Next Deliverables** — retrained weights, IR demo footage, updated Technical Note.
 
-1. Improved Training (More Epochs)  
-- Retrain YOLOv5s with 100–300 epochs  
-- Use fish‑specific datasets (tilapia, catfish)  
-- Apply data augmentation (flips, brightness changes, murky water simulation)  
-- **Impact:** Higher detection rate, fewer missed fish, more consistent size/weight estimates  
-
-2. Nighttime / Total Darkness Scenario  
-- Integrate infrared (IR) cameras with IR illumination  
-- Explore low‑light sensors or thermal imaging  
-- Retrain/fine‑tune on IR images  
-- **Impact:** Continuous monitoring at night without disturbing fish behavior  
-
-3. Infrared Light for Fish Tracking  
-- Yes, IR light can be used for fish tracking  
-- Invisible to fish, won’t affect feeding or stress  
-- Next step: Collect IR footage and fine‑tune model  
-
-4. Integration & Product Thinking  
-- Feeder logic, harvest prediction, financing  
-
-5. Deliverables for Next Phase  
-- Retrained YOLOv5s weights  
-- Sample IR footage + detection demo  
-- Updated Technical Note  
-- README update with this section
-
-
-Author
+## Author
 Elewa Prince Chizi  
-Computer Vision / AI Engineer (Trial Candidate)
+Computer Vision / AI Engineer (Trial Candidate)  
 Fishcluster Paid Trial Task
