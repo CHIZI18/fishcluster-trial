@@ -26,13 +26,13 @@ Our prototype provides farmers with **practical insights** into their ponds, hel
 
 ## Installation
 Clone the repo and install dependencies:
-
 ```bash
-git clone https://github.com/<your-username>/fishcluster-trial.git
+git clone https://github.com/CHIZI18/fishcluster-trial.git
 cd fishcluster-trial
 pip install -r requirements.txt
 
-Requirements
+
+## Requirements
 Python 3.8+
 PyTorch
 Torchvision
@@ -43,15 +43,15 @@ Matplotlib
 tqdm
 Ultralytics YOLOv5
 
-Usage
+## Usage
 Run detection on a sample video:
-bash
-python detect.py --input "sample_fish_video.mp4" --output runs/detect
+```bash
+python detect.py --weights yolov5s.pt --source pond_sample.mp4
+
 Outputs
 runs/detect/fish_detected.mp4 → annotated video
 
 Console summary:
-text
 📊 Summary: Detected 38 fish
    Average length: 14.7 cm
    Average weight: 420.5 g
@@ -61,6 +61,11 @@ text
    Small (<15 cm): 12
    Medium (15–30 cm): 23
    Large (>30 cm): 3
+
+## YOLOv5 Weights
+This repo does not include large pretrained weights.  
+Download YOLOv5 weights from Ultralytics:  
+https://github.com/ultralytics/yolov5/releases
 
 ## Assumptions
 Camera is static above or beside pond.
